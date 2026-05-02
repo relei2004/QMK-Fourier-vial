@@ -24,10 +24,14 @@ jobs:
           mkdir -p vial-qmk/keyboards/fourier
           cp -r rp2040/* vial-qmk/keyboards/fourier/
 
-      - name: Install dependencies
+      - name: Install QMK CLI
         run: |
           python3 -m pip install --user qmk
-          python3 -m qmk setup -y -H vial-qmk
+          echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Setup QMK
+        run: |
+          qmk setup -y -H vial-qmk
 
       - name: Build firmware
         working-directory: vial-qmk
