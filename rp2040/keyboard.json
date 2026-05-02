@@ -32,7 +32,8 @@
     "split": {
         "enabled": true,
         "handedness": {
-            "pin": "GP0"
+            "pin": "GP0",
+            "pin_low_is_left": false
         },
         "serial": {
             "pin": "GP3"
