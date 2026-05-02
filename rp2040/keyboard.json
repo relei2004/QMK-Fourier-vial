@@ -32,7 +32,7 @@
     "split": {
         "enabled": true,
         "handedness": {
-            "pin": "GP0"
+            "pin": "GP1"
         },
         "serial": {
             "pin": "GP3"
