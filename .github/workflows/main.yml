@@ -22,7 +22,7 @@ jobs:
       - name: Copy keyboard into vial-qmk
         run: |
           mkdir -p vial-qmk/keyboards/fourier
-          cp -r kp2040/* vial-qmk/keyboards/fourier/
+          cp -r rp2040/* vial-qmk/keyboards/fourier/
 
       - name: Install dependencies
         run: |
