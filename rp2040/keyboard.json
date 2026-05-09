@@ -44,7 +44,7 @@
     },
     "ws2812": {
         "driver": "vendor",
-        "pin": "GP1"
+        "pin": "GP0"
     },
     "processor": "RP2040",
     "bootloader": "rp2040",
